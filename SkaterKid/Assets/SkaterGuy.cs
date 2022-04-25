@@ -12,6 +12,7 @@ public class SkaterGuy : MonoBehaviour
     string lastKey = "d";
     public float combo = 1f;
     public float score = 0f;
+    public int health = 3;
    
     
     public string key
@@ -21,6 +22,7 @@ public class SkaterGuy : MonoBehaviour
 
     public void resetCombo()
     {
+        health--;
         combo = 1f;
         player.SetInteger("Side",0);
         lastKey = "d";

@@ -43,6 +43,7 @@ public class PlayerCollider : MonoBehaviour
         if (skater.key != "d")
         {
             skater.resetCombo();
+            skater.health--;
         }
         isGrounded = true;
     }
